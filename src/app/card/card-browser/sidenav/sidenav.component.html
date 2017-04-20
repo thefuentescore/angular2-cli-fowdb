@@ -1,0 +1,19 @@
+<div class="sidebar-wrapper col-lg-2">
+  <ul class="sidebar-nav">
+    <li class="sidebar-brand">
+      <p>Search:</p>
+    </li>
+    <li>
+      <div class="input-group">
+        <span class="input-group-addon" id="basic-addon1">@</span>
+        <input #name type="text" class="form-control" placeholder="Card Name" aria-describedby="basic-addon1" (input)="passName(name.value)">
+      </div>
+    </li>
+    <li>
+      <div class="input-group">
+        <span class="input-group-addon" id="basic-addon1">@</span>
+        <input #race type="text" class="form-control" placeholder="Race" aria-describedby="basic-addon1" (input)="passRace(race.value)">
+      </div>
+    </li>
+  </ul>
+</div>

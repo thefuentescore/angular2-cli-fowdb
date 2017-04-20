@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { CardModule } from "./card/card.module";
+import { NavigationModule } from "./navigation/navigation.module";
 
 @NgModule({
   declarations: [
@@ -12,7 +14,9 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    CardModule,
+    NavigationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
