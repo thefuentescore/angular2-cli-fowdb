@@ -16,6 +16,7 @@ export class CardListComponent implements OnInit {
   
   @Input() searchedName: string;
   @Input() searchedRace: string;
+  @Input() searchedAttr: string;
   cards: Card[];
 
 

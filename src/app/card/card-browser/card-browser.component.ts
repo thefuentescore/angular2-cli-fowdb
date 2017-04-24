@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class CardBrowserComponent implements OnInit {
   searchedName: string;
   searchedRace: string;
+  searchedAttr: string;
   
   constructor() { }
 

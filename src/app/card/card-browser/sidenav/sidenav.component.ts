@@ -8,6 +8,7 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 export class SidenavComponent implements OnInit {
   @Output("name") nameValueEvent: EventEmitter<string> = new EventEmitter();
   @Output("race") raceValueEvent: EventEmitter<string> = new EventEmitter();
+  @Output("attr") attributeValueEvent: EventEmitter<string> = new EventEmitter();
 
   constructor() { }
 
@@ -19,6 +20,9 @@ export class SidenavComponent implements OnInit {
   }
   passRace(race:string){
     this.raceValueEvent.emit(race);
+  }
+  passAttribute(attr:string){
+    this.attributeValueEvent.emit(attr);
   }
 
 }

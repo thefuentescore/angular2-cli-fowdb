@@ -1,0 +1,125 @@
+[{
+    "id": 0,
+    "name": "Origin",
+    "sets": [
+      "Starter",
+      "The Dawn of Valhalla",
+      "The War of Valhalla",
+      "The Shaft of Light of Valhalla",
+      "The Crimson Moon Fairy Tale",
+      "The Castle of Heaven and the Two Towers",
+      "The Moon Priestess Returns",
+      "The Millennia of Ages",
+      "Vingolf series - Engage Knights",
+      "Faria, the Sacred Queen/Melgis, the Flame King",
+      "The Seven Kings of the Lands",
+      "The Twilight Wanderer",
+      "The Moonlit Savior",
+      "Battle for Attoractia",
+      "Vingolf 2 - Valkyria Chronicles",
+      "Starter Deck Lapis - Light",
+      "Starter Deck Lapis - Fire",
+      "Starter Deck Lapis - Water",
+      "Starter Deck Lapis - Wind",
+      "Starter Deck Lapis - Darkness",
+      "Curse of the Frozen Casket",
+      "Legacy Lost",
+      "Vingolf 3 - All Stars Ruler",
+      "Return of the Dragon Emperor"
+
+    ],
+    "banlist": []
+  },
+  {
+    "id": 1,
+    "name": "Wanderer",
+    "sets": [
+      "The Crimson Moon Fairy Tale",
+      "The Castle of Heaven and the Two Towers",
+      "The Moon Priestess Returns",
+      "The Millennia of Ages",
+      "Vingolf series - Engage Knights",
+      "Faria, the Sacred Queen/Melgis, the Flame King",
+      "The Seven Kings of the Lands",
+      "The Twilight Wanderer",
+      "The Moonlit Savior",
+      "Battle for Attoractia",
+      "Vingolf 2 - Valkyria Chronicles",
+      "Starter Deck Lapis - Light",
+      "Starter Deck Lapis - Fire",
+      "Starter Deck Lapis - Water",
+      "Starter Deck Lapis - Wind",
+      "Starter Deck Lapis - Darkness",
+      "Curse of the Frozen Casket",
+      "Legacy Lost",
+      "Vingolf 3 - All Stars Ruler",
+      "Return of the Dragon Emperor"
+    ],
+    "banlist": [
+      "Reflect, Child of Potential",
+      "Refrain, Child of Convergence",
+      "Laevateinn, the Demon Sword",
+      "Ruler's Memoria",
+      "Whisper from the Abyss",
+      "Seer of the Blue Moon",
+      "Kaguya, Princess of the Moon",
+      "Tell a Fairy Tale"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "New Frontiers",
+    "sets": [
+      "Starter Deck Lapis - Light",
+      "Starter Deck Lapis - Fire",
+      "Starter Deck Lapis - Water",
+      "Starter Deck Lapis - Wind",
+      "Starter Deck Lapis - Darkness",
+      "Curse of the Frozen Casket",
+      "Legacy Lost",
+      "Vingolf 3 - All Stars Ruler",
+      "Return of the Dragon Emperor"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Grimm",
+    "sets": [
+      "The Crimson Moon Fairy Tale",
+      "The Castle of Heaven and the Two Towers",
+      "The Moon Priestess Returns",
+      "The Millennia of Ages",
+      "Vingolf series - Engage Knights"
+    ],
+    "banlist": []
+  },
+  {
+    "id": 4,
+    "name": "Alice",
+    "sets": [
+      "Faria, the Sacred Queen/Melgis, the Flame King",
+      "The Seven Kings of the Lands",
+      "The Twilight Wanderer",
+      "The Moonlit Savior",
+      "Battle for Attoractia",
+      "Vingolf 2 - Valkyria Chronicles"
+    ],
+    "banlist": []
+  },
+  {
+    "id": 5,
+    "name": "Lapis",
+    "sets": [
+      "Starter Deck Lapis - Light",
+      "Starter Deck Lapis - Fire",
+      "Starter Deck Lapis - Water",
+      "Starter Deck Lapis - Wind",
+      "Starter Deck Lapis - Darkness",
+      "Curse of the Frozen Casket",
+      "Legacy Lost",
+      "Vingolf 3 - All Stars Ruler",
+      "Return of the Dragon Emperor"
+    ],
+    "banlist": []
+  }
+]

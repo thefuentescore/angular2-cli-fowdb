@@ -1,0 +1,47 @@
+[{
+    "id": 0,
+    "name": "Valhalla Cluster",
+    "sets": [
+      "Starter",
+      "The Dawn of Valhalla",
+      "The War of Valhalla",
+      "The Shaft of Light of Valhalla"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Grimm Cluster",
+    "sets": [
+      "The Crimson Moon Fairy Tale",
+      "The Castle of Heaven and the Two Towers",
+      "The Moon Priestess Returns",
+      "The Millennia of Ages",
+      "Vingolf series - Engage Knights"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Alice Cluster",
+    "sets": [
+      "Faria, the Sacred Queen/Melgis, the Flame King",
+      "The Seven Kings of the Lands",
+      "The Twilight Wanderer",
+      "The Moonlit Savior",
+      "Battle for Attoractia",
+      "Vingolf 2 - Valkyria Chronicles"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Lapis Cluster",
+    "sets": [
+      "Starter Deck Lapis - Light",
+      "Starter Deck Lapis - Fire",
+      "Starter Deck Lapis - Water",
+      "Starter Deck Lapis - Wind",
+      "Starter Deck Lapis - Darkness",
+      "Curse of the Frozen Casket",
+      "Legacy Lost"
+    ]
+  }
+]
