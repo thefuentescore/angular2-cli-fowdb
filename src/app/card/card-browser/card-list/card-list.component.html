@@ -1,17 +1,13 @@
+<span defaultOverlayTarget></span>
 <div class="page-content-wrapper col-lg-10">
   <div class="container-fluid">
     <div class="card-grid row">
       <div class="col-lg-3 col-md-4 col-xs-6 thumb" *ngFor="let card of cards | nameSort:searchedName | raceSort:searchedRace"
         md-cols="4">
-        <button type="button" class="card-thumb thumbnail" data-toggle="modal" data-target="#card-modal">
+        <a class="card-thumb thumbnail" (click)="showCardInfo(card)">
           <img class="img-responsive" src="{{card.thumbnailImage}}">
-        </button>
+        </a>
       </div>
     </div>
-  </div>
-</div>
-<div id="card-modal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <card-info></card-info>
   </div>
 </div>
