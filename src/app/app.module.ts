@@ -8,18 +8,22 @@ import { AppComponent } from './app.component';
 import { CardModule } from "./card/card.module";
 import { NavigationModule } from "./navigation/navigation.module";
 
+import { routes } from "./app.routes";
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     CardModule,
-    NavigationModule
+    NavigationModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]

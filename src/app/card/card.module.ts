@@ -10,6 +10,7 @@ import { RaceSortPipe } from './card-browser/card-list/race-sort.pipe';
 
 import { CardService } from "./card.service";
 import { SidenavComponent } from './card-browser/sidenav/sidenav.component';
+import { CardInfoComponent } from './card-browser/card-info/card-info.component';
 
 const appRoutes: Routes = [
   { path: 'card-browser', component: CardBrowserComponent }
@@ -21,7 +22,7 @@ const appRoutes: Routes = [
     FormsModule,
     RouterModule.forRoot(appRoutes) 
   ],
-  declarations: [ CardListComponent, CardBrowserComponent, NameSortPipe, RaceSortPipe, SidenavComponent ],
+  declarations: [ CardListComponent, CardBrowserComponent, NameSortPipe, RaceSortPipe, SidenavComponent, CardInfoComponent ],
   providers: [ CardService ],
   exports: [CardListComponent, CardBrowserComponent]
 })

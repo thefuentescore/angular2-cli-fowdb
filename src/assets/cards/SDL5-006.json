@@ -1,1 +1,13 @@
-{"name":"Momotaro of the Sanzu River","attribute":"<img src=\"_images/icons/1x1.gif\" class=\"fdb-icon-b\">&nbsp;Dark","type":"Resonator","cmc":0,"racesOrTraits":["Fairy Tale"],"text":"This card gains [+300/+300] as long as you control four or more resonators.","set":"Starter - Vampiric Hunger","code":"SDL5-006 SR","rarity":"SR","thumbnailImage":"app/assets/img/cards/SDL5/006.jpg","cardImage":"http://db.fowtcg.us/cards/sdl5/006.jpg"}
+{
+  "name": "Momotaro of the Sanzu River",
+  "attribute": "<img src=\"_images/icons/1x1.gif\" class=\"fdb-icon-b\">&nbsp;Dark",
+  "type": "Resonator",
+  "cmc": 0,
+  "racesOrTraits": ["Fairy Tale"],
+  "text": "This card gains [+300/+300] as long as you control four or more resonators.",
+  "set": "Starter - Vampiric Hunger",
+  "code": "SDL5-006 SR",
+  "rarity": "SR",
+  "thumbnailImage": "app/assets/img/cards/SDL5/006.jpg",
+  "cardImage": "http://db.fowtcg.us/cards/sdl5/006.jpg"
+}
