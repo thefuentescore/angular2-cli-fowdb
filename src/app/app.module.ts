@@ -6,23 +6,23 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { CardModule } from "./card/card.module";
-import { NavigationModule } from "./navigation/navigation.module";
 
 import { routes } from "./app.routes";
-import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { NavigationBarComponent } from "./navigation-bar/navigation-bar.component";
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    AboutComponent,
+    NavigationBarComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     CardModule,
-    NavigationModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],

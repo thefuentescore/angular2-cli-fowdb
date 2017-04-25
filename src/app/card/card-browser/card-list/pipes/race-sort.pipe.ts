@@ -1,5 +1,4 @@
 import {  Pipe,  PipeTransform,  Injectable } from '@angular/core';
-import { Card } from "../../card";
 
 @Pipe({
   name: 'raceSort',
@@ -7,8 +6,8 @@ import { Card } from "../../card";
 })
 @Injectable()
 export class RaceSortPipe implements PipeTransform {
-  transform(items: Card[], race: any): any {
-    let selectedCards: Card[] = new Array();
+  transform(items: any[], race: any): any {
+    let selectedCards: any[] = new Array();
     if (race != undefined) {
       items.forEach(card => {
         if (card.racesOrTraits) {

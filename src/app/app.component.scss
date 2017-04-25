@@ -1,0 +1,15 @@
+$mobile: "(min-width: 320px) and (max-width: 679px)";
+$tablet: "(min-width: 680px) and (max-width: 1024px)";
+$desktop: "(min-width: 1024px)";
+.app-wrapper {
+  margin-top: 5%;
+  @media #{$desktop} {
+    margin-top: 5%;
+  }
+  @media #{$mobile} {
+    margin-top: 30%;
+  }
+  @media #{$tablet} {
+    margin-top: 10%;
+  }
+}

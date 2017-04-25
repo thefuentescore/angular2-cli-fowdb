@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform, Injectable } from '@angular/core';
-import { Card } from '../../card';
+
 
 @Pipe({
   name: 'attributeSort'
@@ -7,7 +7,7 @@ import { Card } from '../../card';
 @Injectable()
 export class AttributeSortPipe implements PipeTransform {
   transform(items: any[], attr: any): any {
-    var selectedCards: Card[] = [];
+    var selectedCards: any[] = [];
     if (attr != undefined) {
       for(let card of items){
         if(card.attribute){
