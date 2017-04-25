@@ -1,24 +1,43 @@
 <div class="sidebar-wrapper col-lg-2">
   <ul class="sidebar-nav">
-    <li class="sidebar-brand">
-      <p>Search:</p>
-    </li>
     <li>
-      <div class="input-group">
-        <span class="input-group-addon" id="basic-addon1">@</span>
+      <div class="sidebar-header">
+        <p>Filters</p>
+      </div>
+    </li>
+    <!-- NAME SEARCH -->
+    <li>
+      <div class="input-group filter-input">
+        <div class="input-group-addon input-icon">
+          <i class="fa fa-id-card-o" aria-hidden="true"></i>
+        </div>
         <input #name type="text" class="form-control" placeholder="Card Name" aria-describedby="basic-addon1" (input)="passName(name.value)">
       </div>
     </li>
+    <!-- RACE SEARCH -->
     <li>
-      <div class="input-group">
-        <span class="input-group-addon" id="basic-addon1">@</span>
+      <div class="input-group filter-input">
+        <div class="input-group-addon input-icon">
+          <i class="fa fa-tag" aria-hidden="true"></i>
+        </div>
         <input #race type="text" class="form-control" placeholder="Race" aria-describedby="basic-addon1" (input)="passRace(race.value)">
       </div>
     </li>
-        <li>
-      <div class="input-group">
-        <span class="input-group-addon" id="basic-addon1">@</span>
+    <!-- ATTRIBUTE SEARCH -->
+    <li>
+      <div class="input-group filter-input">
+        <div class="input-group-addon input-icon">
+          <i class="fa fa-eyedropper" aria-hidden="true"></i>
+        </div>
         <input #attr type="text" class="form-control" placeholder="Attribute" aria-describedby="basic-addon1" (input)="passAttribute(attr.value)">
+      </div>
+    </li>
+    <!-- FORMAT SELECTION  -->
+    <li>
+      <div>
+        <select [(ngModel)]="selectedFormat" (ngModelChange)="passFormat($event)" class="form-control">
+          <option *ngFor="let format of formats" [ngValue]="format">{{format.name}}</option>
+        </select>
       </div>
     </li>
   </ul>

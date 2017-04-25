@@ -2,7 +2,7 @@
 <div class="page-content-wrapper col-lg-10">
   <div class="container-fluid">
     <div class="card-grid row">
-      <div class="col-lg-3 col-md-4 col-xs-6 thumb" *ngFor="let card of cards | nameSort:searchedName | raceSort:searchedRace | attributeSort:searchedAttr"
+      <div class="col-lg-3 col-md-4 col-xs-6 thumb" *ngFor="let card of cards | nameSort:searchedName | raceSort:searchedRace | attributeSort:searchedAttr | formatSort:searchedFormat"
         md-cols="4">
         <a class="card-thumb thumbnail" (click)="showCardInfo(card)">
           <img class="img-responsive" src="{{card.thumbnailImage}}">

@@ -14,6 +14,7 @@ import { CardService } from "./card.service";
 import { SidenavComponent } from './card-browser/sidenav/sidenav.component';
 import { CardInfoComponent } from './card-browser/card-info/card-info.component';
 import { AttributeSortPipe } from './card-browser/card-list/attribute-sort.pipe';
+import { FormatSortPipe } from './card-browser/card-list/format-sort.pipe';
 
 const appRoutes: Routes = [
   { path: 'card-browser', component: CardBrowserComponent }
@@ -27,7 +28,7 @@ const appRoutes: Routes = [
     ModalModule.forRoot(),
     BootstrapModalModule
   ],
-  declarations: [ CardListComponent, CardBrowserComponent, NameSortPipe, RaceSortPipe, SidenavComponent, CardInfoComponent, AttributeSortPipe ],
+  declarations: [ CardListComponent, CardBrowserComponent, NameSortPipe, RaceSortPipe, SidenavComponent, CardInfoComponent, AttributeSortPipe, FormatSortPipe ],
   providers: [ CardService ],
   exports: [CardListComponent, CardBrowserComponent],
   entryComponents:[CardInfoComponent]

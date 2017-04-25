@@ -1,6 +1,37 @@
 /* Sidebar Styles */
-.sidebar-wrapper{
+
+$mobile: "(min-width: 320px) and (max-width: 679px)";
+$tablet: "(min-width: 680px) and (max-width: 1024px)";
+$desktop: "(min-width: 1024px)";
+
+.sidebar-wrapper {
   z-index: 1;
+  margin-left: 1em;
+  color: #333;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+
+  @media #{$desktop} {
+    position: fixed;
+  }
+  @media #{$mobile}{
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+  }
+}
+
+.sidebar-header {
+  background-color: #333;
+  color: #f5f5f5;
+  border-radius: 10px;
+  margin-top: 1em;
+}
+
+.sidebar-header p {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
 }
 
 .sidebar-nav {
@@ -21,17 +52,6 @@
   color: #999999;
 }
 
-.sidebar-nav li a:hover {
-  text-decoration: none;
-  color: #fff;
-  background: rgba(255, 255, 255, 0.2);
-}
-
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
-  text-decoration: none;
-}
-
 .sidebar-nav>.sidebar-brand {
   height: 65px;
   font-size: 18px;
@@ -47,21 +67,10 @@
   background: none;
 }
 
+.input-icon {
+  width: 40px;
+}
 
-/* Small devices (tablets, 768px and up) */
-
-@media (min-width: 768px) {}
-
-
-/* Medium devices (desktops, 992px and up) */
-
-@media (min-width: 992px) {}
-
-
-/* Large devices (large desktops, 1200px and up) */
-
-@media (min-width: 1200px) {
-  .sidebar-wrapper {
-    position: fixed;
-  }
+.filter-input{
+  width: 100%;
 }

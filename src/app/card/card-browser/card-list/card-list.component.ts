@@ -2,7 +2,7 @@ import { Component, ViewContainerRef, OnInit, Input} from '@angular/core';
 import { Overlay, overlayConfigFactory } from "angular2-modal";
 import { Modal }   from 'angular2-modal/plugins/bootstrap';
 
-import { Card }              from '../../card';
+import { Card, Format }              from '../../card';
 import { CardService }       from '../../card.service';
 import { CardInfoComponent, CustomModalContext} from "../card-info/card-info.component";
 
@@ -17,6 +17,8 @@ export class CardListComponent implements OnInit {
   @Input() searchedName: string;
   @Input() searchedRace: string;
   @Input() searchedAttr: string;
+  @Input() searchedFormat: Format;
+
   cards: Card[];
 
 

@@ -1,8 +1,12 @@
 <div class="container-fluid custom-modal-container">
   <div class="row">
-    <div class="col-xs-12">
-      <img class="center-block img-responsive" src="{{card.cardImage}}">
+    <div class="col-xs-12 card-wrapper">
+      <div class="img-wrapper">
+        <img class="center-block img-responsive" src="{{card.cardImage}}">
+      </div>
+      <div class="button-wrapper">
+        <button type="button" class="btn btn-link" (click)="close()">Close</button>
+      </div>
     </div>
-    <button type="button" class="btn btn-link" (click)="close()">Close</button>
   </div>
 </div>

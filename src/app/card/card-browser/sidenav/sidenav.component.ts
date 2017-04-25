@@ -1,5 +1,7 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
+import { Format } from "../../card";
+import { CardService }       from '../../card.service';
 @Component({
   selector: 'sidenav',
   templateUrl: './sidenav.component.html',
@@ -9,10 +11,20 @@ export class SidenavComponent implements OnInit {
   @Output("name") nameValueEvent: EventEmitter<string> = new EventEmitter();
   @Output("race") raceValueEvent: EventEmitter<string> = new EventEmitter();
   @Output("attr") attributeValueEvent: EventEmitter<string> = new EventEmitter();
+  @Output("format") formatValueEvent: EventEmitter<Format> = new EventEmitter();
 
-  constructor() { }
+  formats: Format[];
+  selectedFormat: Format;
 
-  ngOnInit() {
+  constructor(private cardService: CardService,) { }
+  ngOnInit(): void {
+    this.getFormats();
+  }
+
+  getFormats(): void {
+    this.cardService
+      .getFormats()
+      .then(formats => this.formats = formats);     
   }
 
   passName(name:string){
@@ -23,6 +35,9 @@ export class SidenavComponent implements OnInit {
   }
   passAttribute(attr:string){
     this.attributeValueEvent.emit(attr);
+  }
+  passFormat(format: Format){
+    this.formatValueEvent.emit(format);
   }
 
 }
