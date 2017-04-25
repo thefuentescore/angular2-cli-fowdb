@@ -18,6 +18,7 @@ import { NameSortPipe } from './card-browser/card-list/pipes/name-sort.pipe';
 import { RaceSortPipe } from './card-browser/card-list/pipes/race-sort.pipe';
 import { AttributeSortPipe } from './card-browser/card-list/pipes/attribute-sort.pipe';
 import { FormatSortPipe } from './card-browser/card-list/pipes/format-sort.pipe';
+import { LoaderComponent } from "../shared/loader/loader.component";
 
 
 const appRoutes: Routes = [
@@ -32,7 +33,7 @@ const appRoutes: Routes = [
     ModalModule.forRoot(),
     BootstrapModalModule
   ],
-  declarations: [ CardListComponent, CardBrowserComponent, NameSortPipe, RaceSortPipe, SidenavComponent, CardInfoComponent, AttributeSortPipe, FormatSortPipe ],
+  declarations: [ CardListComponent, CardBrowserComponent, NameSortPipe, RaceSortPipe, SidenavComponent, CardInfoComponent, AttributeSortPipe, FormatSortPipe, LoaderComponent ],
   providers: [ CardService ],
   exports: [CardListComponent, CardBrowserComponent],
   entryComponents:[CardInfoComponent]

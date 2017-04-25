@@ -6,6 +6,7 @@ import { Card, Format }              from '../../card';
 import { CardService }       from '../../card.service';
 import { CardInfoComponent, CustomModalContext} from "../card-info/card-info.component";
 
+
 @Component({
   selector: 'card-list',
   templateUrl: './card-list.component.html',
@@ -20,20 +21,21 @@ export class CardListComponent implements OnInit {
   @Input() searchedFormat: Format;
 
   cards: Card[];
-
-
-  constructor(private cardService: CardService, public modal: Modal) {
-    
-  }
-
+  loading: boolean = false;
+  constructor(private cardService: CardService, public modal: Modal){}
+  
   ngOnInit(): void {
     this.getCards();
   }
 
   getCards(): void {
+    this.loading = true;
     this.cardService
       .getCards()
-      .then(cards => this.cards = cards);     
+      .then(cards => {
+        this.cards = cards;
+        this.loading = false;
+      }, () => this.loading = false);     
   }
 
   showCardInfo(selectedCard: Card){

@@ -10,6 +10,7 @@ import { CardModule } from "./card/card.module";
 import { routes } from "./app.routes";
 import { AboutComponent } from './about/about.component';
 import { NavigationBarComponent } from "./navigation-bar/navigation-bar.component";
+import { LoaderComponent } from './shared/loader/loader.component';
 
 
 @NgModule({
